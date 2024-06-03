@@ -1,4 +1,4 @@
-#include "Game.h"
+﻿#include "Game.h"
 
 void Game::drawGame()
 {
@@ -7,15 +7,33 @@ void Game::drawGame()
 	
 
 	while (!WindowShouldClose()) {
-		if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
-			Particle particle(GetMousePosition(), { 0.000001, 0.000001 }, {0.000001,0.000001});
+
+		if (IsKeyDown(KEY_UP)) {
+			Vector2 pos = { 
+					GetRandomValue(GetMousePosition().x - 10, GetMousePosition().x + 10),
+					GetRandomValue(GetMousePosition().y - 10, GetMousePosition().y + 10) 
+			};
+
+			Particle particle(
+				pos, 
+				{ 0.0001, 0.0001 }, 
+				{ 0.0001,0.0001 }
+			);
+
 			addParticles(particle);
+
 		}
 		BeginDrawing();
 			ClearBackground(BLACK);
-			for (Particle& particle : particles) {
-				particle.draw(particle);
-				particle.update(particle);
+			for (auto it = particles.begin(); it != particles.end(); ) {
+				it->draw(*it);
+				it->update(*it);
+				if (it->getLifespan() < 1) {
+					it = particles.erase(it); 
+				}
+				else {
+					++it; 
+				}
 			}
 
 		EndDrawing();
