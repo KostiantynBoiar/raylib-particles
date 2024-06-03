@@ -1,4 +1,21 @@
-﻿  main.cpp
+﻿  Game.cpp
+C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\RaylibParticleSystem\Game.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game.cpp')
+  
+C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\RaylibParticleSystem\Game.cpp(11,67): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\RaylibParticleSystem\Game.cpp(11,76): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\RaylibParticleSystem\Game.cpp(11,44): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\RaylibParticleSystem\Game.cpp(11,54): warning C4305: 'initializing': truncation from 'double' to 'float'
+  main.cpp
+C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\RaylibParticleSystem\Game.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'main.cpp')
+  
+  Particle.cpp
+C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\RaylibParticleSystem\Particle.cpp(19,67): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\RaylibParticleSystem\Particle.cpp(19,52): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\RaylibParticleSystem\Particle.cpp(19,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\RaylibParticleSystem\Particle.cpp(19,30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
   RaylibParticleSystem.vcxproj -> C:\Users\Kostiantyn\source\repos\RaylibParticleSystem\x64\Debug\RaylibParticleSystem.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
